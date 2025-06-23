@@ -1,0 +1,410 @@
+/* Importation de la police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+NKo&display=swap');
+
+/* Réinitialisation des marges et du box-sizing pour tous les éléments */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style général du body : police, couleur de fond et couleur du texte */
+body {
+    font-family: 'Noto Sans NKo', sans-serif;
+    background-color: #f0f4ff;
+    color: #333;
+}
+
+/* Style de l'en-tête : barre sticky, ombre, alignement flex */
+header {
+    height: 4rem;
+    background-color: white;
+    padding: 0 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+
+/* Navigation du header : menu horizontal avec espacement */
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+/* Liens du menu : style et effet au survol */
+header nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+    
+}
+
+/* Changement de couleur au survol des liens */
+nav ul li a:hover {
+    color: #6e51cf;
+}
+
+/* Bouton du header : style principal et effet au survol */
+header button {
+    background-color: #6e51cf;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+header button:hover {
+    background-color: #d3c9f3;
+    color: #333;
+    border: 1px solid #6e51cf;
+}
+
+
+/* Espacement général du contenu principal */
+main {
+    padding: 2rem;
+}
+
+/* Section bienvenue : fond dégradé, centrage du contenu */
+.bienvenue {
+    width: 100%;
+    height: 70vh;
+    padding: 1rem;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #7743e9 15%,  #6e51cf 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Titre principal dans la section bienvenue */
+.bienvenue .intro h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 900;
+}
+
+/* Paragraphe d’intro bienvenue */
+.bienvenue .intro p {
+    font-size: clamp(1rem, 2vw, 1rem);
+    color: #fff;
+}
+
+/* Bouton dans la section intro */
+.intro button {
+    background-color: #fff;
+    color: #333;
+    margin-top: 1.4rem;
+    padding: 0.9rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+/* Cercle animé en arrière-plan */
+.droite img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.droite {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.effect {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.effect .cercle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d3c9f3;
+    position: absolute;
+    animation: animation 4s ease-in infinite;
+}
+
+/*cercles pour l'effet*/
+.effect .cercle:nth-child(1) {
+    background: linear-gradient(90deg, #7743e9 15%,  #9b8dc8 100%);
+    position: absolute;
+    right: 10px;
+}
+
+.effect .cercle:nth-child(2) {
+    background: linear-gradient(90deg, #7743e9 15%,  #9b8dc8 100%);
+    position: absolute;
+    left: 10px;
+}
+.effect .cercle:nth-child(3) {
+    background: linear-gradient(90deg, #7743e9 15%,  #9b8dc8 100%);
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+/* Animation de déplacement vertical */
+@keyframes animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Section services*/
+#services {
+    margin-top: 2rem;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Liste des services : disposition en flex */
+.liste-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Carte de service individuelle */
+.liste-service .option-service {
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Icône de service */
+.option-service .icone {
+    width: 50px;
+    height: 50px;
+    background-color: #ccb6fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+}
+
+.option-service .icone i {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.option-service h3 {
+   margin-top: 1rem;
+}
+
+/* Section albums : grille de photos */
+#albums {
+    margin-top: 2rem;
+}
+
+#albums h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#albums .photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Section contact : deux colonnes */
+#contact {
+    margin-top: 2rem;
+    display: flex;
+    height: calc(100vh -200px);
+    background-color: #fff;
+}
+
+#contact #partie1, #partie2 {
+    flex: 1;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    position: relative;
+    padding: 1rem;
+}
+
+/* Partie gauche du contact */
+#contact #partie1 {
+    background-color: #ccb6fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Formulaire de contact */
+#partie2 form {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#partie2 form input, textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+#partie2 form textarea {
+    height: 100px;
+}
+
+#partie2 form input:focus, textarea:focus {
+    background-color: 1px solid #7743e9;
+}
+
+#partie2 form button {
+    background-color: #7743e9;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#partie2 form button:hover {
+    background-color: #6e51cf;
+    color: #333;
+    border: 1px solid #7743e9;
+}
+
+
+/* --FOOTER-- */
+footer {
+    background-color: #7743e9;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* Boutons réseaux sociaux fixes à droite */
+#reseaux {
+    position: fixed;
+    bottom: 3rem;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #ccb6fa;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    right: 0px;
+}
+
+#reseaux .carte {
+    width: 40px;
+    height: 40px;
+    background-color: #7743e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carte:hover {
+    background-color: #fff;
+}
+
+/* - RESPONSIVESIVITE - */
+/* Adaptation mobile : menu vertical, boutons cachés, etc. */
+@media screen and (max-width: 768px) {
+    header nav ul {
+       flex-direction: column;
+       position: absolute;
+        top: 4rem;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        padding: 1rem;
+        display: none;
+
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .bienvenue .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .bienvenue .intro p {
+        font-size: 0.9rem;
+    }
+
+    .liste-service {
+        flex-direction: column;
+    }
+    
+}
