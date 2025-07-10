@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGGBA</title>
+    <link rel="stylesheet" href="brief_3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <!-- en-tete contenant les 3lien plus le bouton de connection -->
+    <header>
+        <h2>INGGBA</h2>
+    <nav>
+        <ul>
+            <li><a href="#acceuil">Accueil</a></li>
+            <li><a href="#apropos">A Propos</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+    </nav>
+        
+        <button class="btn-connecter-vous">Connecter vous</button>
+    </header>
+
+<!-- corps du devoir -->
+<main>
+    <!-- Bienvenue plus le logo de INGGBA plus le bouton -->
+        <section class="bienvenue">
+            <div class="intro">
+                <h1>Bienvenue sur INGGBA</h1>
+        <p>INGGBA est une plateforme de gestion des étudiants de l'ADN Golfe 1 . Elle permet aux étudiants de s'inscrire, 
+            de consulter leurs notes et d'accéder à diverses ressources académiques.</p>
+            <button class="apprendre">Apprendre encore</button>
+            </div>
+
+            <div class="droite">
+                <img src="90c9dd44-760c-461e-90b0-4c3dd9203763.png" alt="simplon">
+
+                <div class="effect">
+                    <div class="cercle"></div>
+                     <div class="cercle"></div>
+                      <div class="cercle"></div>
+                </div>
+            </div>
+        
+        </section>
+
+        <!-- les services -->
+        <section id="services">
+             <h2>Mes Services</h2>
+
+            <div class="liste-service"> 
+
+                <div class="option-service">
+                    <div class="icone">
+                <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                <h3>Service 1</h3>
+                <p>HTML (HyperText Markup Language) est le langage utilisé pour structurer une page web et son contenu. On peut par exemple organiser le contenu en un ensemble de paragraphes, une liste d'éléments, utiliser des images ou des tableaux de données. </p>
+
+                </div>
+
+                <div class="option-service">
+                    <div class="icone">
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+
+                        <h3>Service 2</h3>
+                        <p>Le css est un langage utilisé pour décrire la présentation d'une page web. Il permet de styliser les éléments HTML en définissant des couleurs, des polices, des marges, des alignements, et bien plus encore. Voici un cours introductif structuré </p>
+
+                </div>
+
+                <div class="option-service">
+                    <div class="icone">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+
+                    <h3>Service 3</h3>
+                <p>COURS SUR Le JAVASCRIPT JavaScript est un langage de programmation essentiel pour le développement web. Il permet de rendre les pages web interactives et dynamiques. Voici les bases pour commencer suivez nous pour en savoir plus apprendre avec joi</p>
+                </div>
+
+                <div class="option-service">
+                    <div class="icone">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+
+                     <h3>Service 4</h3>
+                <p>PHP est un langage de script côté serveur conçu pour le développement web mais aussi utilisé comme langage de programmation généraliste. Créée à l'origine par Rasmus Lerdorf en 1994, l'implémentation de la référence PHP est maintenant</p>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- les albums photo contenant 4photo -->
+        <section id="albums">
+            <h2>Nos Albums</h2>
+            <div class="photo">
+                <img src="172f1658-26d5-4c0c-a444-dd4a0b07660e.png" alt="imaga1">
+                <img src="cac28647-2715-49bf-b8ba-c6e183bc8bb3.png" alt="image2">
+                <img src="f1795045-fcbf-40c1-b954-72633a07c2ec.png" alt="imaga3">
+                <img src="f1795045-fcbf-40c1-b954-72633a07c2ec.png" alt="imaga4">
+            </div>
+        </section>
+
+
+        <!-- partie contact plus un formulaire -->
+        <section id="contact">
+            <div id="partie1">
+                <h2>Qui sommes Nous</h2>
+                <p>INGGBA est une plateforme dédiée à la gestion des étudiants de l'ADN Golfe 1. 
+                    Notre objectif est de faciliter l'accès aux ressources académiques et de simplifier la gestion des inscriptions.</p>
+            </div>
+
+            <div id="partie2">
+                <h2>Contactez-nous</h2>
+            
+                <form>
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" placeholder="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="email" required>
+
+                
+                    <textarea id="message" name="message" placeholder="votre message ici..." required></textarea>
+                    <button type="submit">Envoyez</button>
+                </form>
+
+            </div>
+        </section>
+
+        <!-- pied de page -->
+        <footer>
+            <p>&copy; 2023 Inggbaa. Tous droits réservés.</p>
+        </footer>
+
+        <!-- les reseaux -->
+        <div id="reseaux">
+            <div class="carte"><i class="fa-brands fa-facebook"></i></div>
+            <div class="carte"><i class="fa-brands fa-twitter"></i></div>
+            <div class="carte"><i class="fa-brands fa-linkedin"></i></div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
